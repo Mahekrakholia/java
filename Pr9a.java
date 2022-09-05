@@ -1,8 +1,6 @@
-
-Class Pr9a{
+class Test{
     static boolean checkYear(int year)
     {
-       
         if (year % 400 == 0)
             return true;
         if (year % 100 == 0)
@@ -12,11 +10,12 @@ Class Pr9a{
         return false;
     }
 }
-Class Test extends Pr9a
+class Pr9a extends Test
 {
     public static void main(String[] args)
     {
         int year = 2000;
-        System.out.println( checkYear(2500)? "Leap Year" : "Not a Leap Year" );
+        System.out.println( checkYear(2500)? "Leap Year" :
+                "Not a Leap Year" );
     }
 }
